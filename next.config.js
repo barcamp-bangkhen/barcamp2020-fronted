@@ -6,8 +6,8 @@ module.exports = {
 				destination: '/',
 				permanent: true,
 			},
-		]
-	},
+        ]
+    },
     // Target must be serverless
-    target: "serverless",
+    target: "serverless"
   };

@@ -40,4 +40,7 @@ ui-debug.log
 /public/_next
 /dist
 
+/out_publish/
+/out_functions/
+
 .env
