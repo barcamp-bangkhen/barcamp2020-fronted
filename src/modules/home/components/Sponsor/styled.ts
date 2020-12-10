@@ -14,26 +14,22 @@ export const SponsorText = styled(Text)`
 `
 
 export const LogoWrapper1 = styled.div`
-	width:40%;
+	width:60%;
 	display:flex;
 	padding:20px;
 	justify-content: center;
 	align-items: center;
-	/* width:100%; */
 	svg,img {
 		 width: 100%;
 		 height:100%;
-
 	 }
-
 `
 export const LogoWrapper2 = styled.div`
-	width:30%;
+	width:50%;
 	display:flex;
 	padding:20px;
 	justify-content: center;
 	align-items: center;
-	/* width:100%; */
 	svg,img {
 		 width: 100%;
 		 height:100%;
@@ -42,18 +38,15 @@ export const LogoWrapper2 = styled.div`
 
 `
 export const LogoWrapper3 = styled.div`
-	width:20%;
+	width:40%;
 	display:flex;
 	padding:20px;
 	justify-content: center;
 	align-items: center;
-	/* width:100%; */
 	svg,img {
 		 width: 100%;
 		 height:100%;
-
 	 }
-
 `
 
 export const Logo = styled.div`
@@ -63,15 +56,14 @@ export const Logo = styled.div`
 	justify-content:center;
 	align-items: center;
 	margin: 1rem 0 ;
-
 `
 
-export const Level1Container = styled(Logo)`
+// export const Level1Container = styled(Logo)`
 
-`
+// `
 
-export const Level2Container = styled(Logo)`
-`
+// export const Level2Container = styled(Logo)`
+// `
 
-export const Level3Container = styled(Logo)`
-`
+// export const Level3Container = styled(Logo)`
+// `
