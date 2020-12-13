@@ -7,25 +7,25 @@ import Footer from 'common/components/Footer'
 const FAQSDetail = () => {
 	const questions = [
 		{
-			number: '1.',
+			number: 1,
 			topic: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dolorum!',
 			answer:
 				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, ad obcaecati commodi illo hic libero voluptatem et eligendi consequatur odio.',
 		},
 		{
-			number: '2.',
+			number: 2,
 			topic: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dolorum!',
 			answer:
 				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, ad obcaecati commodi illo hic libero voluptatem et eligendi consequatur odio.',
 		},
 		{
-			number: '3.',
+			number: 3,
 			topic: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dolorum!',
 			answer:
 				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, ad obcaecati commodi illo hic libero voluptatem et eligendi consequatur odio.',
 		},
 		{
-			number: '4.',
+			number: 4,
 			topic: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dolorum!',
 			answer:
 				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, ad obcaecati commodi illo hic libero voluptatem et eligendi consequatur odio.',

@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-import {red, gray} from 'common/styles/colors'
+import {red, yellow} from 'common/styles/colors'
 
 export const Number = styled.span`
-    color: ${gray[900]};
+    color: white;
     position: absolute;
     left: 0;
     display: inline-flex;
@@ -12,6 +12,11 @@ export const Number = styled.span`
     height: 60px;
     background: ${red};
     border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+    &::after {
+        content: ".";
+    }
 
     @media screen and (max-width: 765px) {
         width: 40px;
@@ -21,22 +26,6 @@ export const Number = styled.span`
 
 export const FAQSContainer = styled.div`
     position: relative;
-
-    &::before {
-        content: "";
-        position: absolute;
-        background: ${red};
-        height: 100%;
-        width: 10px;
-        top: 0;
-        left: 0.9em;
-        border-radius: 2em;
-        z-index: -1;
-
-        @media screen and (max-width: 765px) {
-        width: 7px;
-    }
-    }
 `
 
 export const FAQSText = styled.p`
@@ -51,6 +40,22 @@ export const FAQSTopic = styled.h3`
 
 export const FAQS = styled.div`
     padding-bottom: 1em;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background: ${yellow};
+        height: 90%;
+        width: 10px;
+        top: 0;
+        left: 0.9em;
+        border-radius: 2em;
+
+        @media screen and (max-width: 765px) {
+            width: 7px;
+        }
+    }
 `
 
 export const FAQSHeader = styled.h1`
