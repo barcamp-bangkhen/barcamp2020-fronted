@@ -30,7 +30,7 @@ const NavigationBar = ({ toggle }: { toggle: any }) => {
 
 	const router = useRouter()
 
-	const [scrollState, setScrollState] = useState(false)
+	const [scrollState, setScrollState] = useState(true)
 
 	// let sponsorPos = document.querySelector('#sponsor').getBoundingClientRect().top
 
