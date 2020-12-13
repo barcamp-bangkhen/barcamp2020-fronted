@@ -22,7 +22,7 @@ export const Number = styled.span`
 export const FAQSContainer = styled.div`
     position: relative;
 
-    &::after {
+    &::before {
         content: "";
         position: absolute;
         background: ${red};
