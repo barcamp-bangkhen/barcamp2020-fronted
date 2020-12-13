@@ -17,6 +17,7 @@ const HomePage = () => (
 				<Map />
 				<Sponsor />
 				<Footer/>
+		
 	</div>
 )
 
