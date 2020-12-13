@@ -13,6 +13,7 @@ export const NavContainer = styled(Flex)`
 export const NavWrapper = styled(Flex)`
 	min-height: ${NAV_BAR_HEIGHT};
 	position: fixed;
+	z-index: 50;
 	top: 0;
 	width: 100vw;
 	transition: background-color 0.5s linear;

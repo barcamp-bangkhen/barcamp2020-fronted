@@ -1,6 +1,5 @@
 import React from 'react'
 
-import ComingSoonPage from '../../../comingsoon/pages/ComingSoonPage/component'
 import Container from 'common/components/Container'
 import { Number, FAQSContainer, FAQSText, FAQSTopic, FAQS, FAQSHeader } from './styled'
 import Footer from 'common/components/Footer'
