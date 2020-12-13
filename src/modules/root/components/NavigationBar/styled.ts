@@ -15,6 +15,7 @@ export const NavWrapper = styled(Flex)`
 	position: fixed;
 	top: 0;
 	width: 100vw;
+	transition: background-color 0.5s linear;
 	${props => props.className === 'trans' &&
 		css`
 			background-color: transparent;
@@ -23,7 +24,6 @@ export const NavWrapper = styled(Flex)`
 	${props => props.className === 'color' &&
 		css`
 			background-color: #f4e9da;
-			-webkit-transition: background-color 1000ms linear;
 		`}
 `
 export const NavLink = styled.a`
