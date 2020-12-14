@@ -8,7 +8,7 @@ const FAQSDetail = () => {
 	const questions = [
 		{
 			number: 1,
-			topic: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dolorum!',
+			topic: 'Lorem ipsum dolor sit',
 			answer:
 				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, ad obcaecati commodi illo hic libero voluptatem et eligendi consequatur odio.',
 		},
@@ -16,13 +16,12 @@ const FAQSDetail = () => {
 			number: 2,
 			topic: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dolorum!',
 			answer:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, ad obcaecati commodi illo hic libero voluptatem et eligendi consequatur odio.',
+				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, ad obcaecati commodi illo hic libero voluptatem et eligendi consequatur odio. dolor sit amet consectetur adipisicing elit dolor sit amet consectetur adipisicing elit dolor sit amet consectetur adipisicing elit',
 		},
 		{
 			number: 3,
-			topic: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dolorum!',
-			answer:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, ad obcaecati commodi illo hic libero voluptatem et eligendi consequatur odio.',
+			topic: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+			answer: 'Lorem ipsum dolor sit amet consectetur adipisicin.',
 		},
 		{
 			number: 4,

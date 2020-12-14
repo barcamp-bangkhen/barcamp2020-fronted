@@ -12,7 +12,7 @@ export const Number = styled.span`
     height: 60px;
     background: ${red};
     border-radius: 50%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 
     &::after {
         content: ".";
@@ -49,11 +49,14 @@ export const FAQS = styled.div`
         height: 90%;
         width: 10px;
         top: 0;
-        left: 0.9em;
+        left: 30px;
+        transform: translateX(-50%);
         border-radius: 2em;
+        transition: height 0.3s ease-in-out;
 
         @media screen and (max-width: 765px) {
             width: 7px;
+            left: 20px;
         }
     }
 `
@@ -62,4 +65,8 @@ export const FAQSHeader = styled.h1`
     color: ${red};
     font-size: 48px;
     margin-top: 1.5em;
+
+    @media screen and (max-width: 765px) {
+        text-align: center;
+    }
 `

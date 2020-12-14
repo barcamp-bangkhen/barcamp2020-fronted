@@ -28,25 +28,26 @@ export const NavWrapper = styled(Flex)`
 		`}
 `
 export const NavLink = styled.a`
-	color: #433f4f;
+	color: ${props => props.className ? '#da6353' : '#433f4f'};
 	font-size: 1.5vw;
 	position: relative;
 	margin: 0 3rem;
 	
 	&:after {
 		content: '';
-		width: 0%;
+		width: 100%;
 		height: 6px;
 		background-color: #da6353;
 		border-radius: 2px;
 		position: absolute;
-		left: 0px;
-		bottom: -6px;
-		transition: width 0.5s ease-out;
+		transform: ${props => props.className ? 'scaleX(1)' : 'scaleX(0)'};
+		left: 0;
+		bottom: -15px;
+		transition: transform 0.2s ease-out;
 	}
 
 	&:hover&:after {
-		width: 100%;
+		transform: scaleX(1);
 	}
 
 	&:hover {
@@ -56,20 +57,6 @@ export const NavLink = styled.a`
 	@media screen and (max-width: 1024px) {
 		font-size: 2.5vw;
 	}
-	${props => props.className &&
-		css`
-			color: #da6353;
-			&:after {
-				content: '';
-				width: 100%;
-				height: 6px;
-				background-color: #da6353;
-				border-radius: 2px;
-				position: absolute;
-				left: 0px;
-				bottom: -6px;
-			}
-		`}
 `
 export const Bars = styled(FaBars)`
 	display: none;
