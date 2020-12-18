@@ -4,10 +4,18 @@ import Container from 'common/components/Container'
 import { Session, SessionTopic, SessionText, SessionCollapse, Arrow, SessionHeader } from './styled'
 import Footer from 'common/components/Footer'
 
-const SessionDetail = () => {
+const SessionDetail = () => {	
 	const toggleSession = (id: string) => {
+		const sessionsHead = document.querySelectorAll('.session')
 		const session = document.getElementById(id)
-		session.classList.toggle('show')
+		if (session.classList.contains('show')) {
+			session.classList.remove('show')
+		} else {
+			sessionsHead.forEach(session => {
+				session.classList.remove('show')
+			})
+			session.classList.add('show')
+		}
 	}
 
 	const sessions = [
@@ -19,9 +27,6 @@ const SessionDetail = () => {
 			choices: [
 				"Choice 1",
 				"Choice 2",
-				"Choice 3",
-				"Choice 4",
-				"Choice 5",
 			]
 		},
 		{
@@ -46,8 +51,6 @@ const SessionDetail = () => {
 				"Choice 1",
 				"Choice 2",
 				"Choice 3",
-				"Choice 4",
-				"Choice 5",
 			]
 		}
 	]
@@ -58,7 +61,7 @@ const SessionDetail = () => {
 				<SessionHeader>Session</SessionHeader>
 				{sessions.map((session, index) => {
 					return (
-						<Session key={index} id={session.id.toString()}>
+						<Session key={index} id={session.id.toString()} className="session">
 							<SessionTopic onClick={() => {toggleSession(session.id.toString())}}>
 								{session.header}
 								<Arrow />
